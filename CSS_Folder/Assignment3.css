@@ -1,0 +1,253 @@
+/* Global */
+/* Set Arial font and margin:10px for all headers */
+h1, h2, h3, h4{
+    font-family: Arial;
+    margin: 10px;
+}
+
+/* Set font size and color for header */
+h1{
+    font-size: 60px;
+    color: pink;
+}
+
+/* Set font size and color for header */
+h2 {
+    font-size: 50px;
+    color: orange;
+}
+
+/* Set font size and color for header */
+h3 {
+    font-size: 40px;
+    color: red;
+}
+
+/* Set font size and color for header */
+h4 {
+    font-size: 30px;
+    color: green;
+}
+
+/*Removing browser border */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/************* HEADER *************/
+header{
+    background-image: url(../images/headerBackground.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    height:700px;
+}
+header div{
+    margin: auto;
+}
+
+.HeaderContent{
+    padding: 100px;
+}
+
+.Logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background: rgba(84,92,97,0.6);
+    border-radius: 50%;
+    border: 10px solid #b13333; /* Border thickness and color */
+    opacity: 10%;
+    transition: opacity 2s ease;
+}
+
+.Logo img{
+    width: 60%;
+    height: 75%;
+}
+
+/************** Navigation Bar *************/
+.NavigationBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #b13333;
+    color: white;
+    padding: 10px;
+}
+
+.NavigationBar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.NavigationBar li{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* END OF HEADER SECTION */
+
+
+/************* BODY *************/
+/*  - Use a class selector to style the text 
+    inside the paragraph elements that describes each of the menu items
+    - Use line-height to adjust the space between the lines of text
+    - Apply margin and padding to create enough spacing between the paragraphs element and the headings
+*/
+
+/************* About us *************/
+.AboutUs{
+    background-color: #fce8b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    text-align: left;
+}
+
+.AboutUs-Description{
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    min-width: 500px;
+}
+
+.AboutUs img{
+    flex: 1;
+    text-align: center;
+    height: 500px;
+    max-width: 500px;
+}
+
+/************* FibMenu section *************/
+.FibMenu h2{
+    text-align: center;
+}
+
+.FibMenu-Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    opacity: 0%;
+    transition: opacity 2s ease;
+    height: 700px;
+}
+
+.FibMenu-Column{
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.FibMenu-Item {
+    margin-bottom: 20px;
+    
+}
+
+.FibMenu-ItemDescription {
+    font-size: 15px; 
+    font-style: italic;
+    padding: 0; 
+}
+
+/* Checkpoint 3A */
+/************* Mathematician's Favorite section *************/
+.MathFav{
+    background-color: #b13333;
+    padding-bottom: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.MathFav h2{
+    text-align: center;
+}
+
+.MathFav p{
+    text-align: center;
+    color: white
+}
+
+.MathFav-Images{
+    display: flex;
+    justify-content: center;
+    min-width: 75%;
+    min-height: 200px;
+    opacity: 0%;
+    transition: opacity 5s ease;
+}
+
+.math-fav-images img{
+    min-width: 200px;
+    margin: 5px;
+}
+
+/************* Location and Hour section *************/
+.LocationNHour{
+    background-color: #fce8b4;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    opacity: 0%;
+    transition: opacity 10s ease;
+}
+.LocationNHour-Col{
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    min-width: 20%; 
+}
+.LocationNHour img{
+    text-align: right;
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+}
+.LocationNHour-Col h2{
+    text-align: left;
+}
+.LocationNHour-Col address{
+    text-align: left;
+}
+.LocationNHour-Col ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: left;
+}
+/* END OF BODY SECTION */
+
+
+/************* Footer *************/
+footer {
+    background-color: rgb(255, 202, 103);
+}
+footer p{
+    text-align: center;
+}
+
+.footer-social-icon{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 30px;
+}
+
+.footer-social-icon img{
+    width: 30px;
+    margin: 5px;
+}
+/* END OF FOOTER SECTION */
